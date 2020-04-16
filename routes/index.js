@@ -1,10 +1,8 @@
 const express = require('express')
 const router = express.Router()
 
-router.get('/', (req,res) =>{
-    res.json({
-        "Author": "Firman"
-    })
-})
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/views/index.html");
+});
 
 module.exports = router
